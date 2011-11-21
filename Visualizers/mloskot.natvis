@@ -2,14 +2,20 @@
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
 
 <!--
-  Visual Studio 11 Debugger Visualizers
-  Author: Mateusz Loskot <mateusz@loskot.net>
+	Parts of debugger visualizers for Microsoft Visual Studio 11.
+	Author: Mateusz Loskot <mateusz@loskot.net>
+	Library: miscellaneous
 -->
-  
+
 <!--
-Source:
-  %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
-  
+*** BEGIN IMPORTANT NOTE *** 
+The comment below  with .natvis guide was stolen from Microsoft Visual Studio 11 file:
+%ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
+I do not claim copyright or any legal responsibilities for this comment.
+I copied it here because there is no documentation publicly available on MSDN
+for the new style XML-based debugger visualizers in Visual Studio 11.
+*** END IMPORTANT NOTE *** 
+
 For Dev 11 local and remote native debugging, the defaultvis.natvis replaces the autoexp.dat
 file for native type visualization. This feature has been redesigned to
 1) give better diagnostic reporting.
