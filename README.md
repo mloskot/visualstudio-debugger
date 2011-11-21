@@ -4,10 +4,19 @@ Visualizers for Microsoft Visual Studio 11
 This is collection of visualizers for Microsoft Visual Studio 11 debugger.
 Visual Studio 11 uses new style XML-based visualizers
 
-Resources
----------
+Download
+--------
+
 Git repository: https://github.com/mloskot/visualstudio11
 
+Usage
+-----
+
+Copy all or selected .natvis and .natfilter files to your profile folder
+%USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
+
+Resources
+---------
 My blog posts about the new Visual Studio 11 visualizers:
 
 http://mateusz.loskot.net/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/
