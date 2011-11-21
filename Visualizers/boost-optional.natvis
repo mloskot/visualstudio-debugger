@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<!--
+  Copyright (c) 2011 Mateusz Loskot <mateusz@loskot.net>
+  Use, modification and distribution is subject to the Boost Software License,
+  Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
+  http://www.boost.org/LICENSE_1_0.txt)
+  
+  Parts of debugger visualizers for Microsoft Visual Studio 11.
+  Purpose: Boost.Optional
+  Usage: Copy the file to %USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
+-->
+
+  <Type Name="boost::optional&lt;*&gt;">
+    <AlternativeType Name="boost::optional_detail::optional_base&lt;*&gt;"></AlternativeType>
+    <DisplayString Condition="m_initialized == false">empty</DisplayString>
+    <DisplayString>{*((value_type*)(&amp;m_storage.dummy_.data[0]))}</DisplayString>
+    <Expand>
+      <Item Name="[value]" Condition="m_initialized == true">*((value_type*)(&amp;m_storage.dummy_.data[0]))</Item>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>
