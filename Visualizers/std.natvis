@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
-  
+
 <!--
-	Parts of debugger visualizers for Microsoft Visual Studio 11.
-	Author: Mateusz Loskot <mateusz@loskot.net>
-	Library: C/C++ Standard Library
-	
+  Parts of debugger visualizers for Microsoft Visual Studio 11.
+  Author: Mateusz Loskot <mateusz@loskot.net>
+  Purpose: C/C++ Standard Library
+	Usage: Copy the file to %USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
+    
 	This file contains improved version of debugger visualizers shipped with Visual Studio 11
 	See also: http://connect.microsoft.com/VisualStudio/feedback/details/705993/
 -->
