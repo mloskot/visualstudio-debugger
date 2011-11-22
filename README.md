@@ -21,10 +21,12 @@ Documentation
 There are only two sources of documentation I have found:
 
 1. Comments in defaultvis.natvis provide a good overview of the format
-   %VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
+
+		%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
 
 2. The debugger visualizers XML Schema is installed in
-   %VSINSTALLDIR%\Xml\Schemas\natvis.xsd
+
+		%VSINSTALLDIR%\Xml\Schemas\natvis.xsd
 
 I have posted several short articles about the new style visualizers:
 
@@ -38,6 +40,7 @@ License
 -------
 
 Copyright (c) 2011 Mateusz Loskot <mateusz@loskot.net>
+
 Use, modification and distribution is subject to the Boost Software License,
 Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 http://www.boost.org/LICENSE_1_0.txt)
