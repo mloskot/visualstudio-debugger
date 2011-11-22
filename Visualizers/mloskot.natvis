@@ -15,7 +15,7 @@
 <!--
 *** BEGIN IMPORTANT NOTE *** 
 The comment below  with .natvis guide was stolen from Microsoft Visual Studio 11 file:
-%ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
+	%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
 I do not claim copyright or any legal responsibilities for this comment.
 I copied it here because there is no documentation publicly available on MSDN
 for the new style XML-based debugger visualizers in Visual Studio 11.
