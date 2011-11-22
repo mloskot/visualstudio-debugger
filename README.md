@@ -13,7 +13,8 @@ Usage
 -----
 
 Copy all or selected .natvis and .natfilter files to your profile folder
-%USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
+
+	%USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
 
 Documentation
 -------------
