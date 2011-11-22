@@ -76,14 +76,14 @@
       ; Following these examples, shared_ptr is previewed with
       ; "shared_ptr <object> [N strong refs, M weak refs]". -->
     
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
 
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
 
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">shared_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs] [{*_Rep}] </DisplayString>
 
     <DisplayString>shared_ptr {*_Ptr} [{_Rep-&gt;_Uses}] [{*_Rep}] </DisplayString>
 
@@ -111,14 +111,14 @@
     <DisplayString Condition="_Ptr == 0">empty</DisplayString>
     <!--weak_ptr is just like shared_ptr, except that a weak_ptr can be expired.-->
 
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
 
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 == 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &gt; 0) &amp;&amp; (_Rep-&gt;_Weaks - 1 != 1)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs, {_Rep-&gt;_Weaks - 1} weak refs] [{*_Rep}] </DisplayString>
 
-    <DisplayString Condition="(_Rep-&gt;Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref] [{*_Rep}] </DisplayString>
-    <DisplayString Condition="(_Rep-&gt;Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses == 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong ref] [{*_Rep}] </DisplayString>
+    <DisplayString Condition="(_Rep-&gt;_Uses != 1) &amp;&amp; (_Rep-&gt;_Weaks - 1 &lt;= 0)">weak_ptr {*_Ptr} [{_Rep-&gt;_Uses} strong refs] [{*_Rep}] </DisplayString>
 
     <DisplayString>weak_ptr {*_Ptr} [{_Rep-&gt;_Uses}] [{*_Rep}] </DisplayString>
 
