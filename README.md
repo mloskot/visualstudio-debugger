@@ -31,11 +31,9 @@ There are only two sources of documentation I have found:
 
 I have posted several short articles about the new style visualizers:
 
-http://mateusz.loskot.net/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/
-
-http://mateusz.loskot.net/2011/11/20/setting-enablenatvisdiagnostics-in-visual-studio-11/
-
-http://mateusz.loskot.net/2011/11/22/modular-visualizers-in-visual-studio-11/
+* [Debugger visualizers in Visual Sudio 11 Developer Preview](http://mateusz.loskot.net/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/)
+* [Setting EnableNatvisDiagnostics in Visual Studio 11](http://mateusz.loskot.net/2011/11/20/setting-enablenatvisdiagnostics-in-visual-studio-11/)
+* [Modular visualizers in Visual Studio 11](http://mateusz.loskot.net/2011/11/22/modular-visualizers-in-visual-studio-11/)
 	
 License
 -------
