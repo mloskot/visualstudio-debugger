@@ -15,9 +15,20 @@ Usage
 Copy all or selected .natvis and .natfilter files to your profile folder
 %USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
 
-Resources
----------
-My blogs about the new style visualizers in Visual Studio 11:
+Documentation
+-------------
+
+There are only two sources of documentation I have found:
+
+1. Comments in defaultvis.natvis provide a good overview of the format
+
+   %VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers\defaultvis.natvis
+
+2. The debugger visualizers XML Schema is installed in
+
+   %VSINSTALLDIR%\Xml\Schemas\natvis.xsd
+
+I have posted several short articles about the new style visualizers:
 
 http://mateusz.loskot.net/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/
 
