@@ -1,0 +1,43 @@
+; AutoExp.Dat - templates for automatically expanding data
+;
+; Custom visualizers for Visual Studio 2010 (or earlier)
+;
+; Author: Mateusz Loskot <mateusz@loskot.net>
+; Git repository available at http://github.com/mloskot
+;---------------------------------------------------------------
+
+[Visualizer]
+
+;------------------------------------------------------------------------------
+; Python
+;------------------------------------------------------------------------------
+
+_object {
+    preview (
+        #(
+            #if (((void *)&$e) == 0) (
+                "PyObject"
+            ) #else (
+                #(
+                    " PyObject [",
+                    $e.ob_refcnt,
+                    #if ($e.ob_refcnt == 1) (" ref") #else (" refs"),
+                    ", tp_name=",
+                    [$e.ob_type->tp_name,s],
+                    "]"
+                )
+            )
+        )
+    )
+	children (
+		#if (((void *)&$e) == 0) (
+            #array(expr: 0, size: 0)
+		) #else (
+            #(
+                [ob_type] : $e.ob_type,
+                [_ob_prev] : $e._ob_prev,
+                [_ob_next] : $e._ob_next
+            )
+        )
+	)
+}
