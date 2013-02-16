@@ -1,8 +1,8 @@
 Visualizers for Microsoft Visual Studio 11
 ==========================================
 
-This is collection of visualizers for Microsoft Visual Studio 2012 debugger.
-Visual Studio 2012 uses new style XML-based visualizers
+This is collection of visualizers for Microsoft Visual Studio debugger.
+Most of the visualizers are developed for Visual Studio 2012 which uses new style XML-based visualizers
 
 Download
 --------
@@ -31,9 +31,9 @@ There are only two sources of documentation I have found:
 
 I have posted several short articles about the new style visualizers:
 
-* [Debugger visualizers in Visual Sudio 11 Developer Preview](http://mateusz.loskot.net/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/)
-* [Setting EnableNatvisDiagnostics in Visual Studio 11](http://mateusz.loskot.net/2011/11/20/setting-enablenatvisdiagnostics-in-visual-studio-11/)
-* [Modular visualizers in Visual Studio 11](http://mateusz.loskot.net/2011/11/22/modular-visualizers-in-visual-studio-11/)
+* [Debugger visualizers in Visual Sudio 11 Developer Preview](http://mateusz.loskot.net/posts/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/)
+* [Setting EnableNatvisDiagnostics in Visual Studio 11](http://mateusz.loskot.net/posts/2011/11/20/setting-enablenatvisdiagnostics-in-visual-studio-11/)
+* [Modular visualizers in Visual Studio 11](http://mateusz.loskot.net/posts/2011/11/22/modular-visualizers-in-visual-studio-11/)
 	
 License
 -------
