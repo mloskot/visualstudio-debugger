@@ -1,13 +1,13 @@
 Visualizers for Microsoft Visual Studio 11
 ==========================================
 
-This is collection of visualizers for Microsoft Visual Studio 11 debugger.
-Visual Studio 11 uses new style XML-based visualizers
+This is collection of visualizers for Microsoft Visual Studio 2012 debugger.
+Visual Studio 2012 uses new style XML-based visualizers
 
 Download
 --------
 
-Git repository: https://github.com/mloskot/visualstudio11
+Git repository: https://github.com/mloskot/visualstudio-debugger
 
 Usage
 -----
@@ -38,7 +38,7 @@ I have posted several short articles about the new style visualizers:
 License
 -------
 
-Copyright (c) 2011 Mateusz Loskot <mateusz@loskot.net>
+Copyright (c) 2011-2013 Mateusz Loskot <mateusz@loskot.net>
 
 Use, modification and distribution is subject to the Boost Software License,
 Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
