@@ -4,9 +4,31 @@
   <Function><Name>operator new\[\]</Name><Action>NoStepInto</Action></Function>
   <Function><Name>operator delete</Name><Action>NoStepInto</Action></Function>
   <Function><Name>operator delete\[\]</Name><Action>NoStepInto</Action></Function>
-  <Function><Name>std::shared_ptr.*::operator\*</Name><Action>NoStepInto</Action></Function>
-  <Function><Name>std::shared_ptr.*::operator&amp;</Name><Action>NoStepInto</Action></Function>
-  <Function><Name>std::shared_ptr.*::operator-&gt;</Name><Action>NoStepInto</Action></Function>
-  <Function><Name>std::shared_ptr.*::get</Name><Action>NoStepInto</Action></Function>
-  <Function><Name>.*CSimpleStringT.*::operator \b(w)?char(_t)?\b const.*\*</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::_Tree.+::(cr|c|r)?begin</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::_Tree.+::(cr|c|r)?end</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::_Tree(_const)?_iterator.+::operator.+</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::_Vector(_const)?_iterator.+::operator.+</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::shared_ptr.+::operator\*</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::shared_ptr.+::operator&amp;</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::shared_ptr.+::operator-&gt;</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::shared_ptr.+::get</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::basic_(w)?string.+::c_str</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|deque|vector).+::at</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|deque|vector).+::capacity</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|vector).+::data</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|deque|vector).+::empty</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|deque|vector).+::operator\[\]</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|deque|vector).+::(max_)?size</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|deque|vector).+::(cr|c|r)?begin</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::(basic_(w)?string|array|deque|vector).+::(cr|c|r)?end</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CSimpleStringT.+::operator \b(w)?char(_t)?\b const.+\*</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CSimpleStringT.+::GetAt</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CSimpleStringT.+::GetBuffer</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CSimpleStringT.+::GetLength</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CSimpleStringT.+::GetString</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CStringT&lt;.+&gt;::CStringT&lt;.+&gt;</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*CStringT&lt;.+&gt;::IsEmpty</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>CStringArray::operator\[\]</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>CStringArray::GetCount</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>CStringArray::GetSize</Name><Action>NoStepInto</Action></Function>
 </StepFilter>
