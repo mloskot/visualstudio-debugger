@@ -12,6 +12,11 @@
   <Function><Name>std::shared_ptr.+::operator&amp;</Name><Action>NoStepInto</Action></Function>
   <Function><Name>std::shared_ptr.+::operator-&gt;</Name><Action>NoStepInto</Action></Function>
   <Function><Name>std::shared_ptr.+::get</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::unique_ptr.+::operator\*</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::unique_ptr.+::operator&amp;</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::unique_ptr.+::operator-&gt;</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::unique_ptr.+::get</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>std::unique_ptr.+::release</Name><Action>NoStepInto</Action></Function>
   <Function><Name>std::basic_(w)?string.+::c_str</Name><Action>NoStepInto</Action></Function>
   <Function><Name>std::(basic_(w)?string|deque|vector).+::at</Name><Action>NoStepInto</Action></Function>
   <Function><Name>std::(basic_(w)?string|deque|vector).+::capacity</Name><Action>NoStepInto</Action></Function>
