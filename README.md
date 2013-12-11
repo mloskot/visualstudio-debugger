@@ -33,6 +33,7 @@ References
 ----------
 
 * [Using Visual Studio 2013 to write maintainable native visualizations](http://blogs.msdn.com/b/vcblog/archive/2013/06/28/using-visual-studio-2013-to-write-maintainable-native-visualizations-natvis.aspx)
+* [C++ Debugger Visualizers for VS2012](http://visualstudiogallery.msdn.microsoft.com/c7e02633-86d9-4262-b745-6cc647afb3a8) by Arkadiy Shapkin
 * [Debugger visualizers in Visual Sudio 11 Developer Preview](http://mateusz.loskot.net/posts/2011/11/19/debugger-visualizers-in-visual-sudio-11-developer-preview/)
 * [Setting EnableNatvisDiagnostics in Visual Studio 11](http://mateusz.loskot.net/posts/2011/11/20/setting-enablenatvisdiagnostics-in-visual-studio-11/)
 * [Modular visualizers in Visual Studio 11](http://mateusz.loskot.net/posts/2011/11/22/modular-visualizers-in-visual-studio-11/)
