@@ -1,5 +1,5 @@
-Visualizers for Microsoft Visual Studio 11
-==========================================
+Visualizers for Microsoft Visual Studio 2012, 2013
+==================================================
 
 This is collection of visualizers for Microsoft Visual Studio debugger.
 Most of the visualizers are developed for Visual Studio 2012+ which uses new style XML-based visualizers.
