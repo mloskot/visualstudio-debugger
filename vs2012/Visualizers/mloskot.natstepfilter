@@ -38,4 +38,7 @@
   <Function><Name>CStringArray::operator\[\]</Name><Action>NoStepInto</Action></Function>
   <Function><Name>CStringArray::GetCount</Name><Action>NoStepInto</Action></Function>
   <Function><Name>CStringArray::GetSize</Name><Action>NoStepInto</Action></Function>
+  <Function><Name>.*_bstr_t::operator  \b(w)?char(_t)?\b const.+\*</Name><Action>NoStepInto</Action></Function>
 </StepFilter>
+
+
