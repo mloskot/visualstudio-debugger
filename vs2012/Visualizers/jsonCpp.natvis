@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <!-- Json::Value - basic support -->
+  <Type Name="Json::Value">
+    <DisplayString Condition="type_ == 0">null</DisplayString>
+    <DisplayString Condition="type_ == 1">{value_.int_}</DisplayString>
+    <DisplayString Condition="type_ == 2">{value_.uint_}</DisplayString>
+    <DisplayString Condition="type_ == 3">{value_.real_}</DisplayString>
+    <DisplayString Condition="type_ == 4">{value_.string_,s8}</DisplayString>
+    <DisplayString Condition="type_ == 5">{value_.bool_}</DisplayString>
+    <DisplayString Condition="type_ == 6">array ({value_.map_-&gt;_Mysize})</DisplayString>
+    <DisplayString Condition="type_ == 7">object ({value_.map_-&gt;_Mysize})</DisplayString>
+    <DisplayString >Unknown Value type!</DisplayString>
+    <StringView Condition="type_ == 4">value_.string_,s8</StringView>
+    <Expand>
+      <ExpandedItem Condition="type_ == 6">*(value_.map_)</ExpandedItem>
+      <ExpandedItem Condition="type_ == 7">*(value_.map_)</ExpandedItem>
+    </Expand>
+  </Type>
+
+  <!-- Key/value pairs - used as values for objects and arrays (in arrays the key is null so don't display it) -->
+  <Type Name="std::pair&lt;Json::Value::CZString const ,Json::Value&gt;">
+    <DisplayString Condition="first.cstr_ != nullptr">{first.cstr_,s8}: {second}</DisplayString>
+    <DisplayString>{second}</DisplayString>
+    <Expand>
+      <Item Name="key" Condition="first.cstr_ != nullptr">first.cstr_</Item>
+      <Item Name="value" Condition="first.cstr_ != nullptr">second</Item>
+      <ExpandedItem>second</ExpandedItem>
+    </Expand>
+  </Type>
+</AutoVisualizer>
