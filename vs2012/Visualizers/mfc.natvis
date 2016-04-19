@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
 
 <!--
@@ -11,26 +11,38 @@
   Purpose: Visualise MFC types
   Usage: Copy the file to %USERPROFILE%\My Documents\Visual Studio Dev11\Visualizers\
 -->
-  
-  <Type Name="CByteArray">
-    <AlternativeType Name="CWordArray"/>
-	<AlternativeType Name="CDWordArray"/>
-	<AlternativeType Name="CUIntArray"/>
-	<AlternativeType Name="CPtrArray"/>
-	<AlternativeType Name="CObArray"/>
-	<AlternativeType Name="CStringArray"/>
-	<AlternativeType Name="Array&lt;*,*&gt;"/>
-	<AlternativeType Name="CTypedPtrArray&lt;*,*&gt;"/>
-    <DisplayString>{{size = {m_nSize}}}</DisplayString>
-	<Expand>
-	  <Item Name="[size]">m_nSize</Item>
-      <Item Name="[capacity]">m_nMaxSize</Item>
-	  <Item Name="[grow by]">m_nGrowBy</Item>
-      <ArrayItems>
-        <Size>m_nSize</Size>
-        <ValuePointer>m_pData</ValuePointer>
-      </ArrayItems>
-	</Expand>
-  </Type>
-  
+
+	<Type Name="CByteArray">
+		<AlternativeType Name="CWordArray"/>
+		<AlternativeType Name="CDWordArray"/>
+		<AlternativeType Name="CUIntArray"/>
+		<AlternativeType Name="CPtrArray"/>
+		<AlternativeType Name="CObArray"/>
+		<AlternativeType Name="CStringArray"/>
+		<AlternativeType Name="Array&lt;*,*&gt;"/>
+		<AlternativeType Name="CTypedPtrArray&lt;*,*&gt;"/>
+		<DisplayString>{{size = {m_nSize}}}</DisplayString>
+		<Expand>
+			<Item Name="[size]">m_nSize</Item>
+			<Item Name="[capacity]">m_nMaxSize</Item>
+			<Item Name="[grow by]">m_nGrowBy</Item>
+			<ArrayItems>
+				<Size>m_nSize</Size>
+				<ValuePointer>m_pData</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+
+	<Type Name="CTypedPtrList&lt;*,*&gt;">
+		<AlternativeType Name="CStringList"/>
+		<DisplayString>{{size = {m_nCount}}}</DisplayString>
+		<Expand>
+			<LinkedListItems>
+				<HeadPointer>m_pNodeHead</HeadPointer>
+				<NextPointer>pNext</NextPointer>
+				<ValueNode>data</ValueNode>
+			</LinkedListItems>
+		</Expand>
+	</Type>
+
 </AutoVisualizer>
