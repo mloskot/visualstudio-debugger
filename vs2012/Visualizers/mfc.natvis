@@ -44,5 +44,31 @@
       </LinkedListItems>
     </Expand>
   </Type>
+  
+  <Type Name='CMap&lt;*,*,*,*&gt;'>
+    <DisplayString>{{ size={m_nCount} }}</DisplayString>
+    <Expand>
+      <LinkedListItems Condition='  0 &lt; m_nHashTableSize'>
+        <HeadPointer>m_pHashTable[  0]</HeadPointer>
+        <NextPointer>pNext</NextPointer>
+        <ValueNode>this</ValueNode>
+      </LinkedListItems>
 
+      <LinkedListItems Condition='  1 &lt; m_nHashTableSize'>
+        <HeadPointer>m_pHashTable[  1]</HeadPointer>
+        <NextPointer>pNext</NextPointer>
+        <ValueNode>this</ValueNode>
+      </LinkedListItems>
+      <!-- Copy and paste the LinkedListItems above while modifying
+           the index to be able to display more bins                 -->
+    </Expand>
+  </Type>
+
+  <Type Name='CMap&lt;*,*,*,*&gt;::CAssoc'>
+    <Expand>
+      <Item Name='key'>key</Item>
+      <Item Name='value'>value</Item>
+    </Expand>
+  </Type>
+  
 </AutoVisualizer>
