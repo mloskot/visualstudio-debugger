@@ -45,6 +45,17 @@
     </Expand>
   </Type>
   
+  <Type Name="CList&lt;*&gt;">
+    <DisplayString>{{size = {m_nCount}}}</DisplayString>
+    <Expand>
+      <LinkedListItems>
+        <HeadPointer>m_pNodeHead</HeadPointer>
+        <NextPointer>pNext</NextPointer>
+        <ValueNode>data</ValueNode>
+      </LinkedListItems>
+    </Expand>
+  </Type>
+
   <Type Name='CMap&lt;*,*,*,*&gt;'>
     <DisplayString>{{ size={m_nCount} }}</DisplayString>
     <Expand>
