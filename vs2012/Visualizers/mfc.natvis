@@ -19,7 +19,7 @@
     <AlternativeType Name="CPtrArray"/>
     <AlternativeType Name="CObArray"/>
     <AlternativeType Name="CStringArray"/>
-    <AlternativeType Name="Array&lt;*,*&gt;"/>
+    <AlternativeType Name="CArray&lt;*,*&gt;"/>
     <AlternativeType Name="CTypedPtrArray&lt;*,*&gt;"/>
     <DisplayString>{{size = {m_nSize}}}</DisplayString>
     <Expand>
