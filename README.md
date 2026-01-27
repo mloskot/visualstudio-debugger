@@ -1,5 +1,12 @@
 # Visualizers for Microsoft Visual Studio 2012, 2013, 2015
 
+> [!NOTE]
+> This repository is now archived and no longer maintained.
+> Please, use (and support!) the excellent work by [Adam](https://github.com/awulkiew) available here:
+> - https://github.com/awulkiew/graphical-debugging
+> - https://github.com/awulkiew/graphical-debugging-vscode
+> - https://github.com/awulkiew/debugging-helpers
+
 This is collection of visualizers for Microsoft Visual Studio debugger.
 Most of the visualizers are developed for Visual Studio 2012+ which uses new style XML-based visualizers.
 
